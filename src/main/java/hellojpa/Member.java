@@ -1,5 +1,7 @@
 package hellojpa;
 
+import hellojpa.Type.Address;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
