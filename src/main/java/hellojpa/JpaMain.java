@@ -16,17 +16,17 @@ public class JpaMain {
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
 
-//        AddressHistory addressHistory1 = new AddressHistory();
-//        addressHistory1.setAddress(new Address("Seoul", "Gang-Nam", "1234"));
-//
-//        AddressHistory addressHistory2 = new AddressHistory();
-//        addressHistory2.setAddress(new Address("Incheon", "Dong-InCheon", "2232"));
-//
-//        Member member = new Member();
-//        member.getAddressHistories().add(addressHistory1);
-//        member.getAddressHistories().add(addressHistory2);
+        AddressHistory addressHistory1 = new AddressHistory();
+        addressHistory1.setAddress(new Address("Seoul", "Gang-Nam", "1234"));
 
-//        entityManager.persist(member);
+        AddressHistory addressHistory2 = new AddressHistory();
+        addressHistory2.setAddress(new Address("Incheon", "Dong-InCheon", "2232"));
+
+        Member member = new Member();
+        member.getAddressHistories().add(addressHistory1);
+        member.getAddressHistories().add(addressHistory2);
+
+        entityManager.persist(member);
 
 
         Item item1 = new Item();
