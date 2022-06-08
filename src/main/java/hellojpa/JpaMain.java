@@ -29,21 +29,21 @@ public class JpaMain {
         entityManager.persist(member);
 
 
-        Item item1 = new Item();
-        item1.setName("콘칩");
-        item1.setPrice(2000);
-        item1.setQuantity(1);
-
-        Item item2 = new Item();
-        item2.setName("포카칩");
-        item2.setPrice(2000);
-        item2.setQuantity(2);
-
-        Order order = new Order();
-        order.addItem(item1);
-        order.addItem(item2);
-
-        entityManager.persist(order);
+//        Item item1 = new Item();
+//        item1.setName("콘칩");
+//        item1.setPrice(2000);
+//        item1.setQuantity(1);
+//
+//        Item item2 = new Item();
+//        item2.setName("포카칩");
+//        item2.setPrice(2000);
+//        item2.setQuantity(2);
+//
+//        Order order = new Order();
+//        order.addItem(item1);
+//        order.addItem(item2);
+//
+//        entityManager.persist(order);
 
         transaction.commit();
         entityManager.close();
